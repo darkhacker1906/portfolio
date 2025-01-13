@@ -1,11 +1,18 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-
+import { useLocation } from 'react-router'
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import Main from '../components/Main';
 function Homepage() {
+  let location = useLocation();
+  console.log(location,'==========');
   return (
     <>
-    <Navbar/>
-    <div>Homepage</div>
+    {location.pathname==='/' && <Main/>}
+    {location==='/about'&& <About/>}
+    {location==='/projects' && <Projects/>}
+    {location==='/contact' && <Contact/>}
     </>
   )
 }
