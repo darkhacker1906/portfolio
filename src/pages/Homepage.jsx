@@ -6,14 +6,13 @@ import Contact from '../components/Contact';
 import Main from '../components/Main';
 function Homepage() {
   let location = useLocation();
-  console.log(location,'==========');
   return (
-    <>
+    <div>
     {location.pathname==='/' && <Main/>}
-    {location==='/about'&& <About/>}
-    {location==='/projects' && <Projects/>}
-    {location==='/contact' && <Contact/>}
-    </>
+    {location.pathname==='/about'&& <About/>}
+    {location.pathname==='/projects' && <Projects/>}
+    {location.pathname==='/contact' && <Contact/>}
+    </div>
   )
 }
 
