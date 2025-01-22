@@ -8,7 +8,7 @@ function Navbar() {
     navigate(route);
   }
   return (
-    <div className='flex justify-between align-start px-5 py-8'>
+    <div className='flex justify-between align-start px-5 py-8 bg-slate-200'>
     <div className='text-2xl font-medium'>
     <div>Abhinandan Singh</div>
     <div>Full Stack Developer</div>
