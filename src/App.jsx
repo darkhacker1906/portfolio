@@ -11,7 +11,7 @@ function App() {
     <>
     <BrowserRouter>
         <Navbar/>
-        <div className='p-5'>
+        <div className='p-5' style={{height: "calc(100vh - 104px)",overflow: "scroll"}}>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/about' element={<About/>}/>
